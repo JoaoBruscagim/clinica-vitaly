@@ -188,6 +188,10 @@ footer a:hover {
     .menu-icon {
         display: block;
     }
+
+    #sobre {
+        text-align: center;
+    }
 }
 
 .card {
@@ -239,6 +243,7 @@ footer a:hover {
 
 @media (max-width: 768px) {
     .review-card {
+        width: 100%;
         margin: 10px;
     }
     .review-card p {

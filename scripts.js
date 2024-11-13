@@ -11,6 +11,14 @@ window.onscroll = function () {
 
         navLinks.forEach(link => {
             link.style.color = "darkolivegreen";
+
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768 && nav.classList.contains('active')) {
+                    nav.classList.remove('active');
+                    menuIcon.classList.remove('open');
+                    document.body.style.overflow = 'auto';
+                }
+            });
         });
 
         backToTopButton.style.display = "block";
@@ -43,6 +51,12 @@ const nav = document.getElementById('nav');
 menuIcon.addEventListener('click', () => {
     nav.classList.toggle('active');
     navbar.classList.toggle('navbar-white');
+    
+    if (nav.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+    } else {
+        document.body.style.overflow = 'auto';
+    }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
