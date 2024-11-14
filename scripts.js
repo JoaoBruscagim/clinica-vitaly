@@ -71,6 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
             { text: "Top! Excelente lugar, melhor lugar pra tratamento do alcoólatra e dependente químico! Tratamento humanizado! Recomendo!", author_name: "Marcos Donizetti Moreira" },
             { text: "Vitaly, um projeto de vida", author_name: "Ricardo Pereira" },
             { text: "Aqui seu familiar é tratado com humanização e respeito", author_name: "Maicon de Abreu" },
+            { text: "Top! Tratamento humanizado! Profissionais excelentes! Recomendo a todos que tem falimiliares alcoólatras e dependentes químicos!", author_name: "Marcos Donizetti Moreira" },
+            { text: "Equipe preparada! Super indico", author_name: "Rodrigo Sobrinho" },
         ];
 
         const chunkSize = window.innerWidth < 768 ? 1 : 3;
