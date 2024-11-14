@@ -54,8 +54,10 @@ menuIcon.addEventListener('click', () => {
     
     if (nav.classList.contains('active')) {
         document.body.style.overflow = 'hidden';
+        menuIcon.style.color = 'darkolivegreen';
     } else {
         document.body.style.overflow = 'auto';
+        menuIcon.style.color = 'inherit';
     }
 });
 
