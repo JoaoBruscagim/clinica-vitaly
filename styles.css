@@ -145,75 +145,31 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    .nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.9);
-        z-index: 100;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(10px);
-        padding: 20px 0;
-    }
-
-    .navbar-white {
-        background-color: white !important;
-    }
-
-    .nav a {
-        color: darkolivegreen !important;
-    }
-
-    .nav.active {
-        display: flex;
-    }
-
-    .nav-item {
-        padding: 10px 20px;
-        border-bottom: 1px solid #ddd;
-    }
-
-    .nav-item:last-child {
-        border-bottom: none;
-    }
-
-    .nav-item a {
-        color: #333;
-        text-decoration: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    #sobre {
-        text-align: center;
-    }
-}
-
 .card {
     margin-bottom: 20px;
     border-radius: 15px;
     padding: 2rem;
-    min-height: 350px;
+    min-height: 475px;
     text-align: center;
-    border: 1px solid darkolivegreen;
+    border: 3px solid darkolivegreen;
 }
 
 .card-img-top {
     border-radius: 50%;
+    padding: 1px;
     width: 250px;
     height: 250px;
     object-fit: cover;
     margin: 0 auto;
+    border: 3px solid darkolivegreen;
 }
 
 .card-title {
+    margin-top: 10%;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 #depoimentos {
@@ -230,6 +186,7 @@ footer a:hover {
     margin: 15px;
     text-align: left;
     min-height: 15rem;
+    width: 95%;
     border: 2px solid white;
 }
 
@@ -240,16 +197,6 @@ footer a:hover {
 .review-card footer {
     font-size: 1rem;
     opacity: 0.8;
-}
-
-@media (max-width: 768px) {
-    .review-card {
-        width: 100%;
-        margin: 10px;
-    }
-    .review-card p {
-        font-size: 1.1rem;
-    }
 }
 
 .carousel-item {
@@ -306,4 +253,62 @@ footer a:hover {
     color: darkolivegreen !important;
     border: 2px solid darkolivegreen;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .review-card {
+        width: 100%;
+        margin: 10px;
+    }
+    .review-card p {
+        font-size: 1.1rem;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.9);
+        z-index: 100;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        padding: 20px 0;
+    }
+
+    .navbar-white {
+        background-color: white !important;
+    }
+
+    .nav a {
+        color: darkolivegreen !important;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav-item {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .nav-item:last-child {
+        border-bottom: none;
+    }
+
+    .nav-item a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #sobre {
+        text-align: center;
+    }
 }
