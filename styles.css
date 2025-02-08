@@ -141,8 +141,9 @@ footer a{
     text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
+footer p:hover, i:hover {
+    transform: scale(1.05);
+    transition: ease-in-out 0.2s;
 }
 
 .card {
