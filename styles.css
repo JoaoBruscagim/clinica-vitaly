@@ -211,7 +211,7 @@ footer p:hover, i:hover {
 
 
 .footer {
-    background-color: darkolivegreen;
+    background-color: darkolivegreen !important;
 }
 
 .logo img {
